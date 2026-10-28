@@ -3,112 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banele Gumbi | Portfolio & Engineering</title>
+    <title>Banele Gumbi | Business Administration & Software Systems Specialist</title>
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="googlec872cccd59953659" />
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Official portfolio of Banele Gumbi: Business Administration specialist and full-stack developer in Durban, South Africa. Specializing in Python, React, and business automation.">
+    <meta name="keywords" content="Banele Gumbi, Business Administration, Software Developer Durban, Management Sciences, Python Developer South Africa, Mbango VA Agency">
+    <meta name="author" content="Banele Gumbi">
+    <link rel="canonical" href="https://banele477.github.io/portfolio/" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Banele Gumbi | Business & Software Systems Specialist">
+    <meta property="og:description" content="Bridging operational strategy with full-stack execution and automated business systems.">
+    <meta property="og:url" content="https://banele477.github.io/portfolio/">
+    <meta property="og:type" content="website">
+
+    <!-- Stylesheets & Fonts -->
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Structured Data (Schema Markup for Search Engine Crawlers) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Banele Gumbi",
+      "jobTitle": "Software Developer & Business Systems Specialist",
+      "url": "https://banele477.github.io/portfolio/",
+      "sameAs": [
+        "https://github.com/Banele477"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Durban University of Technology"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Durban",
+        "addressRegion": "KwaZulu-Natal",
+        "addressCountry": "South Africa"
+      }
+    }
+    </script>
 </head>
 <body>
-    <!-- Header / Navbar -->
-    <header>
+    <!-- Skip Navigation Link for Accessibility (Screen Readers / Keyboard Users) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header role="banner">
         <div class="nav-container">
-            <h2 class="logo">BG<span>.</span></h2>
-            <nav>
+            <a href="#" class="logo" aria-label="Banele Gumbi Home Page">Banele<span>.dev</span></a>
+            <nav role="navigation" aria-label="Main Navigation">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">Overview</a></li>
+                    <li><a href="#capabilities">Capabilities</a></li>
+                    <li><a href="#projects">Case Studies</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="theme-toggle" id="themeToggle"><i class="fa-solid fa-moon"></i></div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Banele Gumbi</span></h1>
-            <p class="tagline">Business Administration & Full-Stack Developer</p>
-            <p class="bio">Bridging the gap between business management systems and software engineering. Building robust mobile apps, automation scripts, and digital portfolios from Termux.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn primary-btn">View Projects</a>
-                <a href="#contact" class="btn secondary-btn">Get in Touch</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-grid">
-            <div class="about-card">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <h3>Education & Management</h3>
-                <p>Pursuing a Diploma in Management Sciences (Business Administration) at Durban University of Technology, focusing on financial, operational, and administrative management.</p>
-            </div>
-            <div class="about-card">
-                <i class="fa-solid fa-code"></i>
-                <h3>Software Engineering</h3>
-                <p>Experienced in Python, Kivy, JavaScript, React, Git version control, and executing development workflows straight from Android via Termux.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section bg-alt">
-        <h2 class="section-title">Technical Expertise</h2>
-        <div class="skills-container">
-            <span class="skill-tag">Python / Kivy</span>
-            <span class="skill-tag">JavaScript / React</span>
-            <span class="skill-tag">HTML5 / CSS3 / Tailwind</span>
-            <span class="skill-tag">Git & GitHub</span>
-            <span class="skill-tag">Termux / Linux CLI</span>
-            <span class="skill-tag">Financial Management</span>
-            <span class="skill-tag">Business Administration</span>
-            <span class="skill-tag">API Integration</span>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Hello & Curriculum App</h3>
-                <p>A dynamic web platform engineered for curriculum structuring and deployment workflows, synced via GitHub and Termux.</p>
-                <div class="project-links">
-                    <a href="https://hello-and-curriculum.lovable.app" target="_blank"><i class="fa-solid fa-external-link"></i> Live Demo</a>
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <div class="status-badge" role="status">
+                    <i class="fa-solid fa-circle-check" aria-hidden="true"></i> Available for Full-Time & Technical Contracts
+                </div>
+                <h1 id="hero-title">Engineered Business Systems & <span class="highlight">Full-Stack Solutions</span></h1>
+                <p class="tagline">Diplomate in Management Sciences (Business Administration) & Software Developer</p>
+                <p class="bio">Linking operational strategy with full-stack execution. Specializing in command-line deployment, Python/Kivy architectures, and scalable web applications built directly from Linux/Termux environments.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn">View Case Studies</a>
+                    <a href="#contact" class="btn secondary-btn">Direct Contact</a>
                 </div>
             </div>
-            <div class="project-card">
-                <h3>AI Disaster Response Assistant</h3>
-                <p>Hackathon project integrating backend cloud services on Google Cloud Run and Vercel for real-time emergency mitigation.</p>
-            </div>
-            <div class="project-card">
-                <h3>Mbango VA Agency Platform</h3>
-                <p>Digital solutions platform offering virtual assistance, administrative structuring, and custom web tool developments.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-alt">
-        <h2 class="section-title">Let's Connect</h2>
-        <p class="contact-text">Ready to collaborate or build something extraordinary together? Reach out directly.</p>
-        <div class="contact-info">
-            <p><i class="fa-solid fa-envelope"></i> somkhandabanele8@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> 062 587 3479</p>
-            <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Banele477" target="_blank">github.com/Banele477</a></p>
-        </div>
-    </section>
+        <!-- Capabilities Section -->
+        <section id="capabilities" class="section bg-alt" aria-labelledby="capabilities-title">
+            <h2 id="capabilities-title" class="section-title">Core Competencies</h2>
+            <div class="about-grid">
+                <article class="about-card">
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    <h3>Business Administration & Financial Control</h3>
+                    <p>Focused on Management, Financial Management, Operations, and Administrative Management. Experienced in financial modeling, operational efficiency, and workflow mapping.</p>
+                </article>
+                <article class="about-card">
+                    <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                    <h3>Software & CLI Engineering</h3>
+                    <p>Developing backend automation scripts, REST integrations, Python applications (Kivy UI), and automated Git deployments configured within Termux and cloud platforms.</p>
+                </article>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Banele Gumbi. Engineered with Termux & Passion.</p>
+        <!-- Projects Section -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <h2 id="projects-title" class="section-title">Featured Engineering Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <span class="project-tag">Full-Stack Web</span>
+                    <h3>Hello & Curriculum Platform</h3>
+                    <p>Interactive web application engineered for dynamic curriculum planning, auto-scaffolding, and deployment workflows hosted via Lovable & GitHub.</p>
+                    <div class="project-links">
+                        <a href="https://hello-and-curriculum.lovable.app" target="_blank" rel="noopener noreferrer" aria-label="Visit Hello & Curriculum Platform (Opens in a new tab)">
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Application
+                        </a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <span class="project-tag">AI & Cloud Architecture</span>
+                    <h3>AI Disaster Response Assistant</h3>
+                    <p>Award-recognized hackathon submission integrating AI backend endpoints deployed on Google Cloud Run and Vercel for emergency mitigation.</p>
+                </article>
+                <article class="project-card">
+                    <span class="project-tag">Digital Solutions & Operations</span>
+                    <h3>Mbango VA Agency Platform</h3>
+                    <p>Custom digital interface delivering virtual assistance, workflow automation, and financial administration services for enterprise clients.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt" aria-labelledby="contact-title">
+            <h2 id="contact-title" class="section-title">Professional Verification & Reach</h2>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <strong>Email:</strong> <a href="mailto:somkhandabanele8@gmail.com">somkhandabanele8@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone" aria-hidden="true"></i> <strong>Phone:</strong> <a href="tel:+27625873479">062 587 3479</a></p>
+                <p><i class="fa-brands fa-github" aria-hidden="true"></i> <strong>GitHub:</strong> <a href="https://github.com/Banele477" target="_blank" rel="noopener noreferrer">github.com/Banele477</a></p>
+                <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Location:</strong> Durban, KwaZulu-Natal, South Africa</p>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2026 Banele Gumbi. Deployed & Maintained via Termux CLI.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
